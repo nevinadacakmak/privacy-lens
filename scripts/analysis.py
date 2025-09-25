@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
-# Example data (replace with your logs)
-epsilons = [1.5, 3.0, 6.0]        # privacy budgets
-accuracies = [72.4, 78.1, 82.9]   # test accuracies (%)
-leakage = [0.05, 0.12, 0.32]      # canary confidence scores (higher = worse privacy)
+# example
+epsilons = [1.5, 3.0, 6.0] # privacy budgets
+accuracies = [72.4, 78.1, 82.9] # test accuracies (%)
+leakage = [0.05, 0.12, 0.32] # canary confidence scores
 
 fig, ax1 = plt.subplots()
 

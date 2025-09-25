@@ -1,45 +1,13 @@
-# PrivacyLens 🔍
+# PrivacyLens
 
-_A framework to evaluate memorization and privacy risks in large language models._
-
-## Overview
-
-PrivacyLens explores how large language models (LLMs) memorize sensitive data and how differential privacy techniques can reduce these risks.  
-We focus on:
+PrivacyLens is a prototype framework to **evaluate memorization and privacy risks in large language models (LLMs)**.  
+It demonstrates how fine-tuned models can memorize sensitive identifiers and explores how **differential privacy (DP)** mitigates leakage while balancing utility.
 
 - Measuring memorization with **canary insertion tests** and **membership inference**.
 - Applying **differentially private stochastic gradient descent (DP-SGD)** using [Opacus](https://opacus.ai/).
 - Reporting trade-offs between model utility (accuracy, perplexity) and privacy guarantees (leakage reduction, ε).
 
-## Repository Structure
-
-- `notebooks/` – Reproducible experiments and analysis.
-- `scripts/` – Modular training and evaluation code.
-- `data/` – Scripts or links for dataset preparation.
-- `results/` – Experiment logs and plots.
-
-## Quick Start
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/nevinadacakmak/privacy-lens.git
-   cd privacylens
-   ```
-
-## to do
-
-add gpt-2
-
----
-
-# PrivacyLens 🔍
-
-PrivacyLens is a prototype framework to **evaluate memorization and privacy risks in large language models (LLMs)**.  
-It demonstrates how fine-tuned models can memorize sensitive identifiers and explores how **differential privacy (DP)** mitigates leakage while balancing utility.
-
----
-
-## ✨ Features
+## Features
 
 - **Classification task (DistilBERT)**
 
@@ -60,7 +28,7 @@ It demonstrates how fine-tuned models can memorize sensitive identifiers and exp
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 Clone the repo and install dependencies:
 
@@ -70,16 +38,16 @@ cd PrivacyLens
 pip install -r requirements.txt
 ```
 
-**Requirements (main):**
-
-- Python 3.9+
-- PyTorch
-- HuggingFace Transformers
-- Opacus
-
 ---
 
-## 🚀 Usage
+## Repository Structure
+
+- `notebooks/` – Reproducible experiments and analysis.
+- `scripts/` – Modular training and evaluation code.
+- `data/` – Scripts or links for dataset preparation.
+- `results/` – Experiment logs and plots.
+
+## Usage
 
 ### 1. DistilBERT with Differential Privacy
 
@@ -101,7 +69,7 @@ Results are logged as accuracy, ε, and leakage scores.
 
 ---
 
-### 2. GPT-2 Leakage Demo
+### GPT-2 Leakage Demo
 
 Fine-tune GPT-2 on toy data with a _canary identifier_:
 
@@ -118,7 +86,7 @@ My secret code is NevinAda123
 
 ---
 
-## 📊 Example Results
+## Example Results
 
 | Model      | DP Enabled | ε   | Accuracy | Leakage Observed |
 | ---------- | ---------- | --- | -------- | ---------------- |
@@ -128,18 +96,10 @@ My secret code is NevinAda123
 
 ---
 
-## 📄 Project Status
+## Project Status
 
 PrivacyLens is **work-in-progress**. Current scope:
 
-- ✅ DistilBERT with Opacus for DP-SGD
-- ✅ GPT-2 canary memorization test
-- 🔜 Extended metrics and benchmarks
-
----
-
-## 🧑‍💻 Author
-
-Nevin Ada Çakmak
-University of Toronto, Computer Science (Co-op)
-[LinkedIn](https://www.linkedin.com/in/nevin-ada-cakmak/) | [GitHub](https://github.com/nevinadacakmak)
+- DistilBERT with Opacus for DP-SGD
+- GPT-2 canary memorization test
+- Extended metrics and benchmarks (work in progress)

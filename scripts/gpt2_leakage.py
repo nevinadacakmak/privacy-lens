@@ -1,4 +1,3 @@
-# gpt2_leakage.py
 import torch
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments, TextDataset, DataCollatorForLanguageModeling
 
