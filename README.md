@@ -33,8 +33,8 @@ It demonstrates how fine-tuned models can memorize sensitive identifiers and exp
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/PrivacyLens.git
-cd PrivacyLens
+git clone https://github.com/nevinadacakmak/privacy-lens.git
+cd privacy-lens
 pip install -r requirements.txt
 ```
 
